@@ -13,7 +13,7 @@ Welcome to the Tic-Tac-Toe Web App project! This interactive web application all
 
 ## Demo
 
-You can try the live demo of the Tic-Tac-Toe Web App here: [Demo Link]([#](https://anvesh1041.github.io/PRODIGY_WD_03/))
+You can try the live demo of the Tic-Tac-Toe Web App here: [Demo Link](https://anvesh1041.github.io/PRODIGY_WD_03/)
 
 ## Features
 
