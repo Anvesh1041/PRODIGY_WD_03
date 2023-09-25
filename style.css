@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    border: 2px solid black;
+    border-radius: 7.5px;
+    width: 50vw;
+    min-width: 400px;
+    min-height: 446.075px;
+    max-height: 579px;
+}
+
+header,
+.play {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem;
+}
+
+.btn {
+    background-color: #e0e0e0;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.active {
+    background-color: #ccc;
+    border: 1.5px dashed #000;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+
+.btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn1:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.play {
+    margin: 2rem;
+}
+
+#board {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.win {
+    position: relative;
+    height: 0;
+    display: none;
+    top: 10%;
+    left: 1.2%;
+    z-index: 5;
+    /* width: 0px; */
+    border: 5px solid red;
+    border-radius: 20px;
+    border-width: 0 0 5px 0;
+    transform-origin: center center;
+}
+
+.winr1 {
+    top: 8.9%;
+    display: block;
+    width: 219px;
+    animation: winline 2s ease-in-out 1;
+
+}
+
+.winr2 {
+    top: 27.8%;
+    display: block;
+    width: 219px;
+    animation: winline 2s ease-in-out 1;
+
+}
+
+.winr3 {
+    top: 46.8%;
+    display: block;
+    width: 219px;
+    animation: winline 2s ease-in-out 1;
+
+}
+
+.winc1 {
+    left: -13%;
+    top: 28%;
+    transform: rotate(90deg);
+    display: block;
+    width: 219px;
+    animation: winline 2s ease-in-out 1;
+
+}
+
+.winc2 {
+    top: 28%;
+    transform: rotate(90deg);
+    display: block;
+    width: 219px;
+    animation: winline 2s ease-in-out 1;
+
+}
+
+.winc3 {
+    left: 15.7%;
+    top: 28%;
+    transform: rotate(90deg);
+    display: block;
+    width: 219px;
+    animation: winline 2s ease-in-out 1;
+
+}
+
+.wind1 {
+    top: 28%;
+    transform: rotate(45deg);
+    display: block;
+    width: 315px;
+    animation: windiagonally 2s ease-in-out 1;
+
+}
+
+.wind2 {
+    top: 28%;
+    transform: rotate(135deg);
+    display: block;
+    width: 315px;
+    animation: windiagonally 2s ease-in-out 1;
+
+}
+
+.winner {
+    font-weight: 700;
+    font-size: xxx-large;
+    color: maroon;
+}
+
+@keyframes winline {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 219px;
+    }
+}
+
+@keyframes windiagonally {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 315px;
+    }
+}
+
+
+#replay,
+#reset {
+    display: none;
+    margin: 5px 15px 5px 15px;
+}
+
+.score {
+    display: none;
+    position: absolute;
+    right: 28vw;
+    top: 202.5px;
+}
+
+@media screen and (max-width:1330px) {
+    .score {
+        position: static;
+    }
+
+}

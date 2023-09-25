@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+        </header>
+        <div id="container">
+            <div class="player">
+                <h3>You vs</h3>
+                <button class="btn opp active">Computer</button>or<button class="btn opp">Friend</button>
+            </div>
+            <div class="player">
+                <h3>Select :</h3>
+                <button class="btn xo active">X</button>or<button class="btn xo">O</button>
+
+            </div>
+            <div class="play">
+                <button class="btn1">Play</button>
+            </div>
+        </div>
+        <div class="win"></div>
+        <div id="board">
+            <div class="cell" data-row="0" data-col="0"></div>
+            <div class="cell" data-row="0" data-col="1"></div>
+            <div class="cell" data-row="0" data-col="2"></div>
+            <div class="cell" data-row="1" data-col="0"></div>
+            <div class="cell" data-row="1" data-col="1"></div>
+            <div class="cell" data-row="1" data-col="2"></div>
+            <div class="cell" data-row="2" data-col="0"></div>
+            <div class="cell" data-row="2" data-col="1"></div>
+            <div class="cell" data-row="2" data-col="2"></div>
+        </div>
+        <div class="winner"></div>
+        <div class="after-result">
+            <button class="btn1" id="replay">PLay Again</button>
+            <button class="btn1" id="reset">Reset</button>
+        </div>
+        <div class="score">
+            <h3 id="p1">Player 1 Score : </h3>
+            <h3 id="p2">Player 2 Score : </h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
